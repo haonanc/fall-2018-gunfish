@@ -277,6 +277,12 @@ public class Gunfish : NetworkBehaviour {
         //}
     }
 
+    //Sets the current cooldown to the maximum cooldown value
+    public void Stun () {
+        currentFireCD = maxFireCD;
+        currentJumpCD = maxJumpCD;
+    }
+
     //Checks to see if any Transform in the Gunfish hierarchy
     //is touching the ground.
     public bool IsGrounded () {
